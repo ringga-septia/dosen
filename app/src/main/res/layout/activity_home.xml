@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4A2097"
+    tools:context=".activities.HomeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+<LinearLayout
+    android:id="@+id/btn_absen"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="#352D45"
+ android:showDividers="beginning">
+    <ImageView
+        android:layout_width="146dp"
+        android:layout_height="154dp"
+        android:background="@drawable/absen"
+ />
+    <com.google.android.material.textview.MaterialTextView
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:text="absen"
+       />
+
+</LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn_cek_absen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:background="#352D45">
+                <ImageView
+                    android:layout_width="143dp"
+                    android:layout_height="149dp"
+                    android:background="@drawable/absen_cek"
+                    android:fontFamily="casual"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:padding="15dp"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:text="cek absen"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:background="#352D45">
+                <ImageView
+                    android:layout_width="143dp"
+                    android:layout_height="149dp"
+                    android:background="@drawable/profile"
+                    android:fontFamily="casual"
+                    android:text="cek absen"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:padding="10dp"
+                    android:textSize="50dp"
+                    android:textStyle="bold"
+                    android:text="Profile"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/keluar"
+            android:layout_width="150dp"
+            android:layout_height="142dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/exit"
+            android:fontFamily="casual"
+            android:text="logout"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>
